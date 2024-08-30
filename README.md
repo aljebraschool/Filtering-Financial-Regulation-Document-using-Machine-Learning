@@ -68,6 +68,3 @@ The machine learning pipeline follows these steps:
 4. **Deployment:**
    - The trained model is served using a FastAPI application. Additionally, a Gradio interface is provided for easier interaction with the model for testing purposes.
 
-## Additional Resources
-
-For more detailed steps and insights into the model training, please refer to the [Google Colab Notebook](https://colab.research.google.com/drive/1akHZK6wGip3DKjcmkbXnj7BARsf9pU9B?usp=sharing).

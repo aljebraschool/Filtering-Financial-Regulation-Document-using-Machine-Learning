@@ -54,7 +54,7 @@ The machine learning pipeline follows these steps:
 
 1. **Data Preprocessing:**
    - Data is cleaned and preprocessed using scaling, encoding, and feature extraction techniques.
-   - TF-IDF vectors are generated from text data to represent the documents numerically.
+
 
 2. **Model Training:**
    - Multiple models (Logistic Regression, Random Forest, Support Vector Machine, XGBoost) were trained and evaluated using GridSearchCV for hyperparameter tuning.

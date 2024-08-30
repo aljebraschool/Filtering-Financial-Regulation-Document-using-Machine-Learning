@@ -35,7 +35,7 @@ This project is focused on building and deploying a machine learning model to cl
 
 4. **Train the Model (Optional)**
 
-   You can train the model using the provided notebook on Google Colab. The link to the Weights and Biases (WandB) experiment is [here](https://wandb.ai/aljebraschool-university-muhammed-vi-polytechnic/financial_document_with_ml).
+   You can train the model using the provided notebook on Google Colab. The training process can be tracked using Weights and Biases (WandB). You can view the experiment tracking dashboard [here](https://wandb.ai/aljebraschool-university-muhammed-vi-polytechnic/financial_document_with_ml).
 
 5. **Run the Application**
 
@@ -84,13 +84,11 @@ This project employs a robust machine learning pipeline to classify financial do
 2. **Model Training**:
    - Utilized four different models: Logistic Regression, Random Forest, Support Vector Machine, and XGBoost
    - Applied hyperparameter tuning using GridSearchCV and SMOTE for class imbalance
-   - Tracked experiments and model performance using [Weights and Biases](https://wandb.ai/aljebraschool-university-muhammed-vi-polytechnic/financial_document_with_ml)
+   - Tracked experiments and model performance using [Weights and Biases](https://wandb.ai/aljebraschool-university-muhammed-vi-polytechnic/financial_document_with_ml) for experiment tracking and visualization
 
 3. **Model Deployment**:
    - Deployed the best model using FastAPI for API-based interaction
    - Integrated a Gradio interface for easy access to model predictions through a web interface
 
 This project effectively demonstrates the end-to-end process of building, evaluating, and deploying a machine learning model for financial document classification.
-
----
 

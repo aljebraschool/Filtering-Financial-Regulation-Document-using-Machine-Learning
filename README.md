@@ -26,6 +26,35 @@ To set up this project on your local machine, follow these steps:
 
    Alternatively, you can use the pre-trained model included in this repository to skip the training step.
 
+## Running the API
+
+The project includes a FastAPI application for serving model predictions. Follow these steps to run the API:
+
+1. **Start the FastAPI Server:**
+   In your terminal, navigate to the project directory and run:
+   ```bash
+   uvicorn app:app --reload
+   ```
+   This command will start a local server at `http://127.0.0.1:8000`.
+
+2. **Test the API:**
+   Once the server is running, you can test the API by sending a POST request to the `/predict` endpoint. You can use tools like `curl`, Postman, or simply navigate to the Swagger UI at `http://127.0.0.1:8000/docs` to interact with the API.
+
+   The API expects a CSV file as input, and it will return a CSV file with the predictions. An example input file is provided in the repository.
+
+## Running the Gradio Interface
+
+Gradio provides a user-friendly interface to interact with the model. Follow these steps to launch the Gradio interface:
+
+1. **Start the Gradio Interface:**
+   Run the following command in your terminal:
+   ```bash
+   python gradio_interface.py
+   ```
+
+2. **Interact with the Model:**
+   After starting the interface, Gradio will provide you with a link. Open the link in your web browser to interact with the model. You can upload documents and see the predictions directly.
+
 ## Code Structure
 
 The codebase is organized as follows:
@@ -54,7 +83,7 @@ The machine learning pipeline follows these steps:
 
 1. **Data Preprocessing:**
    - Data is cleaned and preprocessed using scaling, encoding, and feature extraction techniques.
-
+   - TF-IDF vectors are generated from text data to represent the documents numerically.
 
 2. **Model Training:**
    - Multiple models (Logistic Regression, Random Forest, Support Vector Machine, XGBoost) were trained and evaluated using GridSearchCV for hyperparameter tuning.
@@ -68,3 +97,6 @@ The machine learning pipeline follows these steps:
 4. **Deployment:**
    - The trained model is served using a FastAPI application. Additionally, a Gradio interface is provided for easier interaction with the model for testing purposes.
 
+## Additional Resources
+
+For more detailed steps and insights into the model training, please refer to the [Google Colab Notebook](https://colab.research.google.com/drive/1akHZK6wGip3DKjcmkbXnj7BARsf9pU9B?usp=sharing).

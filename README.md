@@ -1,7 +1,3 @@
-Here's a `README.md` file for your project:
-
----
-
 # Financial Document Classification with Machine Learning
 
 This project is focused on building and deploying a machine learning model to classify financial documents based on their relevance. The project is structured to use both Google Colab for model training and PyCharm IDE for deployment purposes.
@@ -98,4 +94,3 @@ This project effectively demonstrates the end-to-end process of building, evalua
 
 ---
 
-You can adjust the repository URL and other specifics as per your actual setup.
